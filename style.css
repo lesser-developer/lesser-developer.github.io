@@ -1,106 +1,186 @@
-html {
-    margin: 0px;
-}
-
-#logo {
-    margin: 0px;
-    padding: 8px;
-    font-family: "Fredoka One", sans-serif;
-    width: 16%;
-    text-shadow: 
-    1px 1px 0px black,
-    -1px 1px 0px black,
-    1px -1px 0px black,
-    -1px -1px 0px black;
+body{
+    background-image: url(https://images.unsplash.com/photo-1475274047050-1d0c0975c63e?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: white;
+    font-family: "Chakra Petch";
 }
 
-ul {
-    margin: 0px;
+a{
+    color: aliceblue;
 }
 
-body {
-    font-family: Helvetica, Arial, sans-serif;
-    margin: 0px;
+#header-logo{
+    text-align: center;
+    margin-bottom: 0px;
+    font-size: 7vh;
+}
+
+.logo{
+    color: #75D701;
+}
+
+#est{
+    text-align: center;
+    margin-top: 0px;
+    font-size: 2.5vh;
+}
+
+#main-navigation{
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+}
+
+#nav-links{
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-button{
+    padding: 20px;
+    text-decoration: none;
     font-size: 1.5vw;
 }
 
-#main-header{
-    background-color: orange;
-    color: white;
-    display: flex;
-    height: 12vh;
-    align-items: center;
-    justify-content: space-around;
+#search-bar{
+    width: 300px;
+    height: 30px;
+    align-self: center;
+    margin: 20px;
+    align-self: flex-end;
 }
 
-#nav{
-    display: flex;
+hr{
+    margin-bottom: 30px;
 }
 
-#nav>li{
-    padding: 8px;
-    margin: 16px;
-}
-
-body > header > nav > ul {
-    list-style: none;
-    text-decoration: none;
-}
-
-.nav-button {
-    color: white;
-    text-decoration: none;
-    padding: 12px;
-    border: 1px solid white;
-    border-radius: 10%;
-}
-
-body > main article {
+body{
     width: 70%;
     margin: auto;
 }
 
-#main-content{
+#bar-1{
     display: flex;
-    justify-content: space-around;
+    gap: 50px;
+    margin-bottom: 100px;
 }
 
-#main-content > div {
-    width: 70%;
+#history{
+    flex: 1;
+    background-color: rgba(142, 192, 228, 0.5);
+    border-radius: 10%;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 10px;
 }
 
-#main-content aside{
-    width: 20%
+#zyra-kallix{
+    float: right;
+    margin: 0 15px 10px 10px
+    
 }
 
-form {
+h2{
+    font-size: 2vw;
+}
+
+#book-of-the-month{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    background-color: rgba(142, 192, 228, 0.5);
+    border-radius: 10%;
+    padding: 15px;
+}
+
+#book-of-the-month-cover{
+    margin-bottom: 5px;
+}
+
+#book-of-the-month-title{
+    padding: 20px;
+    text-decoration: none;
+}
+
+.book-of-the-month-details{
+    margin: 10px;
+}
+
+#bar-2{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+    background-color: rgba(142, 192, 228, 0.5);
+    border-radius: 10%;
+    padding: 15px;
+}
+
+#featured-books{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.featured-book{
+    flex: 1;
+    flex-direction: column;
     text-align: center;
 }
 
-h2 {
+.book-cover{
+    justify-items: center;
+    padding-left: 35px;
+}
+
+.featured-book > ul > li{
+    list-style-type: none;
     text-align: center;
 }
 
-body > footer {
-    background-color: orange;
-    display: flex;
+.featured-book > ul > li > a{
+    text-decoration: none;
+    text-align: justify;
 }
 
-#footer-ul{
+#bar-3{
+    background-color: rgba(142, 192, 228, 0.5);
+    border-radius: 10%;
+    padding: 15px;
+}
+
+footer{
+    display: flex;
+    margin-top: 100px;
+    align-items: center;
+}
+
+#footer-logo{
+    text-align: center;
+}
+
+#footer-navigation{
     display: flex;
     list-style: none;
 }
 
-#footer-ul>div>li{
+#footer-navigation>div>li{
     margin: 12px;
 }
-#footer-ul>div>li>a{
+
+#footer-navigation>div>li>a{
     text-decoration: none;
-    color: white;
     padding: 12px;
 }
 
-img {
-    border-radius: 50%;
+#copyright{
+    position: absolute;
+    right: 0;
+    padding-right: 20px;
+    padding-top: 135px;
 }
